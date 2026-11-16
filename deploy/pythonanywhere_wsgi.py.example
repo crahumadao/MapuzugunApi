@@ -1,0 +1,18 @@
+"""Example WSGI configuration for crahumadao.pythonanywhere.com.
+
+Copy into the WSGI file selected in PythonAnywhere > Web ONLY after
+backing up and inspecting any existing environment-specific configuration.
+This example is documentation, not a file PythonAnywhere loads automatically.
+"""
+
+import os
+import sys
+
+PROJECT_DIR = "/home/crahumadao/MapuzugunApi"
+if PROJECT_DIR not in sys.path:
+    sys.path.insert(0, PROJECT_DIR)
+
+# The current application.py reads config/*.json using relative paths.
+os.chdir(PROJECT_DIR)
+
+from application import application
