@@ -1,0 +1,4 @@
+# CI compatibility constraints for the legacy Flask/pandas stack on Python 3.10.
+# These do not change the PythonAnywhere virtualenv.
+Werkzeug==2.2.3
+numpy==1.24.4

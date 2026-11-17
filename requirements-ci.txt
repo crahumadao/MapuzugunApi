@@ -1,0 +1,2 @@
+# Test-only dependencies; do not install these on the production server.
+pytest>=8,<9
